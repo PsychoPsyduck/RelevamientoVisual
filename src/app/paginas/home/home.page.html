@@ -1,0 +1,50 @@
+<ion-header>
+  <ion-toolbar color="primary">
+    <ion-button slot="end" fill="clear" (click)="presentActionSheet()">
+      <ion-icon style="color: aliceblue" name="menu"></ion-icon>
+    </ion-button>
+    <ion-title>
+      Relevamiento Visual
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content class="content-with-full-height">
+
+  <ion-list class="content-with-full-height">
+    <ion-label>
+      <h2><b>Cosas Buenas</b></h2>
+    </ion-label>
+    <ion-item class="test" lines="none">
+      <ion-button class="marks-buttons" color="tertiary" expand="block" (click)="tomarFoto(0)">
+        <img src="../../assets/good.png" alt="">
+      </ion-button>
+    </ion-item>
+    <!-- <ion-item-divider></ion-item-divider> -->
+    <ion-label>
+      <h2><b>Cosas Malas</b></h2>
+    </ion-label>
+    <ion-item class="test" lines="none">
+      <ion-button class="marks-buttons" color="tertiary" expand="block" (click)="tomarFoto(1)">
+        <img src="../../assets/bad.png" alt="">
+      </ion-button>
+    </ion-item>
+
+  </ion-list>
+
+  <!-- <div class="ion-padding"> -->
+    <!-- <ion-label>
+      <h2><b>Cosas Lindas</b></h2>
+    </ion-label>
+    <ion-button class="marks-buttons" color="tertiary" expand="block" (click)="tomarFoto(0)">
+      <img src="../../assets/check.png" alt="">
+    </ion-button>
+    <ion-label>
+      <h2><b>Cosas Feas</b></h2>
+    </ion-label>
+    <ion-button class="marks-buttons" color="tertiary" expand="block" (click)="tomarFoto(1)">
+      <img src="../../assets/cross.png" alt="">
+    </ion-button> -->
+  <!-- </div> -->
+  <!-- <img *ngIf='imagen' [src]="imagen" alt=""> -->
+</ion-content>

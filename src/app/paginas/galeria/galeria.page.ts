@@ -117,7 +117,7 @@ export class GaleriaPage implements OnInit {
     const actionSheet = await this.actionSheetController.create({
       buttons: [
         {
-          text: 'Home',
+          text: 'Inicio',
           role: 'destructive',
           icon: 'home',
           handler: () => {
